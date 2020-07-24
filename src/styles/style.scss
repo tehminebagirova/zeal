@@ -1,0 +1,18 @@
+// @import '~font-awesome/css/font-awesome.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "vendors/bootstrap";
+@import "molecules/sprite";
+@import "general";
+@import "variable";
+@import "font/stylesheet.css";
+@import "mixin.scss";
+
+// UI-KIT
+@import "UI-KIT/button";
+
+//Pages
+@import "pages/hompage";
+
+//Sections
+@import "sections/header";
+

@@ -1,0 +1,13 @@
+// max tablet
+@mixin max-tablet{
+    @media (max-width:991.9px) {
+        @content;
+    }
+}
+
+// min tablet
+@mixin min-tablet{
+    @media (min-width:991.9px) {
+        @content;
+    }
+}
