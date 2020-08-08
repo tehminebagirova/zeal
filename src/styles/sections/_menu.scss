@@ -1,0 +1,146 @@
+#menu {
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    top: 76px;
+    background: #1B1404;
+    // border: 1px dashed red;
+    display: none;
+
+    .container {
+        max-width: 1265px;
+    }
+
+    .inner-menu {
+        width: 100%;
+        height: calc(100vh - 140px);
+        background-image: url(../static/assets/digital-service-socialad-3840x2160.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        position: relative;
+        transform: scale(0.8);
+        transition: 1s;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+
+        &.active {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .content-menu {
+            width: calc(100% - 29%);
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .lines {
+                // border: 1px solid white;
+                z-index: 6;
+                position: relative;
+            }
+
+            .line {
+                padding-bottom: 35px;
+
+                &:last-child {
+                    padding: 0;
+                }
+
+                h4 {
+                    font-size: .9rem;
+                    line-height: 1.9444444444;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    color: white;
+                    font-family: 'Intro', Arial, Helvetica, sans-serif;
+                }
+
+                p,
+                a {
+                    font-size: .9rem;
+                    line-height: 1.9444444444;
+                    color: #A7ABA9;
+                    opacity: 9;
+                    font-weight: 700;
+                }
+
+                h3 {
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    font-size: 1.1875rem;
+                    line-height: 1.75;
+                    color: white;
+                    position: relative;
+                    font-family: 'Intro', Arial, Helvetica, sans-serif;
+                    transform: translateX(41px);
+                    margin-bottom: 13px;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 1.5em;
+                        height: 2.5px;
+                        background: white;
+                        left: -40px;
+                        top: 47%;
+                    }
+                }
+            }
+
+            .menu-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                a {
+                    font-size: 2.197265625rem;
+                    line-height: 1;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    letter-spacing: .05em;
+                    color: #D3D6D6;
+                    font-family: 'Intro', Arial, Helvetica, sans-serif;
+                    margin-bottom: 18px;
+                    transition:.4s;
+
+                    &:hover{
+                        color:white;
+                    }
+                }
+            }
+
+            .social-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                a {
+                    font-size: .9rem;
+                    line-height: 1.9444444444;
+                    font-family: 'Intro', Arial, Helvetica, sans-serif;
+                    color:#B0B1B2;    
+                    margin: 0.1px 0;    
+                    transition:.4s;
+
+                    &:hover{
+                        color:white;
+                    }            
+                }
+            }
+        }
+
+        .inner-menu-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.397);
+        }
+    }
+}

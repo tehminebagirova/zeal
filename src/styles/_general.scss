@@ -1,7 +1,31 @@
-body{
-    background: #000;
-    font-family: Arial,Helvetica,sans-serif;
+html {
+    font: 1em/1.5555555556 Roboto, Arial, Helvetica, sans-serif;
 }
+
+body {
+    font: 1em/1.5555555556 Roboto, Arial, Helvetica, sans-serif;
+    // background: #000;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #EA72A8;
+    }
+
+    &::-webkit-scrollbar-track {
+        display: block;
+        height: 0;
+        background-color: transparent;
+    }
+
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+
 
 ul {
     margin: 0;
@@ -15,4 +39,14 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }

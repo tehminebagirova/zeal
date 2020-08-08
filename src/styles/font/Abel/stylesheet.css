@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Abel Pro';
+    src: url('AbelPro-Regular.woff2') format('woff2'),
+        url('AbelPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abel Pro';
+    src: url('AbelPro-Bold.woff2') format('woff2'),
+        url('AbelPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

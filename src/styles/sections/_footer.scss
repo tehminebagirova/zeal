@@ -1,0 +1,161 @@
+footer {
+    background-color: #f2f2f2;
+
+    .first-content {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        margin-bottom: 70px;
+
+        li {
+            color: inherit;
+            opacity: .15;
+            transition-property: color, opacity;
+            transition-duration: 1s;
+            transition-delay: .5s;
+            transition-timing-function: linear;
+            transform: translateY(0);
+            font-size: 3.4332275391rem;
+            line-height: 1;
+            font-family: 'Intro', Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: default;
+
+            @include max-tablet-only-t{
+                font-size:2.197265625rem;
+            }
+
+            &:hover {
+                opacity: .3;
+                text-decoration: none;
+                transition-duration: .15s;
+                transition-delay: 0s;
+            }
+        }
+
+        .e {
+            margin-right: 20px;
+        }
+    }
+
+    .second-content {
+        justify-content: center;
+
+        h3 {
+            padding-bottom: 40px;
+            font-size: 1.40625rem;
+            line-height: 1.25;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-family: 'Intro', Arial, Helvetica, sans-serif;
+            opacity: .8;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                width: 14px;
+                height: 2px;
+                background-color: rgba(0, 0, 0, .1);
+                display: block;
+            }
+        }
+
+        p {
+            font-size: .9rem;
+            line-height: 1.9444444444;
+            text-align: center;
+            color: #333;
+            font-weight: 300;
+            opacity: .8;
+        }
+
+        .second-col-content {
+            margin-bottom: 75px;
+
+            @include max-sm-only-t{
+                margin-top: 64px;
+            }
+        }
+
+        .social-footer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+
+            @include max-tablet-only-t {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            a {
+                font-size: .9rem;
+                line-height: 1.9444444444;
+                display: block;
+                font-weight: 400;
+                color: #333;
+                text-transform: uppercase;
+                margin-right: 60px;
+                font-family: 'Intro', Arial, Helvetica, sans-serif;
+                opacity: .6;
+
+                @include max-tablet-only-t {
+                    margin: 0;
+
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .links-footer {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            @include max-tablet-only-t {
+                flex-direction: column;
+            }
+
+            a {
+                margin-right: 30px;
+                font-size: .72rem;
+                line-height: 2.4305555556;
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                color: inherit;
+                opacity: .5;
+                text-align: center;
+
+                @include max-tablet-only-t {
+                    margin: 0;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+
+            }
+        }
+
+        .last-txts-footer {
+            padding: 40px 0 55px 0;
+
+            p {
+                font-size: .72rem;
+                line-height: 2.4305555556;
+                text-align: center;
+                color: #333;
+                font-weight: 300;
+                opacity: .6;
+            }
+        }
+    }
+}

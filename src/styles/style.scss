@@ -4,7 +4,8 @@
 @import "molecules/sprite";
 @import "general";
 @import "variable";
-@import "font/stylesheet.css";
+@import "font/IntroCaps/stylesheet.css";
+@import "font/Abel/stylesheet.css";
 @import "mixin.scss";
 
 // UI-KIT
@@ -15,4 +16,6 @@
 
 //Sections
 @import "sections/header";
+@import "sections/footer";
+@import "sections/menu";
 

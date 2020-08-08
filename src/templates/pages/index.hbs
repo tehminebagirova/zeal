@@ -14,16 +14,27 @@
 
 <body>
 
+    {{> sections/menu}}
 
     <section id="homepage">
         {{!-- wallpaper section --}}
         <div class="wallpaper-section">
             {{> sections/header }}
-
-        </div>
-        {{!-- contact section --}}
-        <div class="contact-section">
-            <img src="../../static/assets/logo.png" alt="">
+            <video autoplay muted loop id="wallpaper-section-h-p">
+                <source src="../video/zeal-homepage-v1.mp4" type="video/mp4">
+            </video>
+            <div class="content-wallpaper-sect-h-p">
+                <h2>we have</h2>
+                <h1>zeal</h1>
+                <h3>Performance Marketing - Brand Exposure - Design & Development</h3>
+                <div class="spans">
+                    <span>Performance Marketing</span>
+                    <span>Brand Exposure</span>
+                    <span>Design & Development</span>
+                </div>
+                <div class="scrool-span"></div>
+            </div>
+            <div class="overlay-wallpaper-section-h-p"></div>
         </div>
     </section>
 

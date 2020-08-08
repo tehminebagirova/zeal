@@ -1,0 +1,154 @@
+#homepage {
+    .wallpaper-section {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+
+        #wallpaper-section-h-p {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .content-wallpaper-sect-h-p {
+            z-index: 1;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            padding-top: 37px;
+
+            @include max-tablet-t {
+                justify-content: center;
+                padding: 0;
+            }
+
+
+            h2 {
+                font-weight: 900;
+                text-transform: uppercase;
+                color: hsla(0, 0%, 100%, .9);
+                // font-size: 10.4773789644rem;
+                font-size: 13.0967rem;
+                text-align: center;
+                line-height: 1;
+                font-family: 'Intro', Arial, Helvetica, sans-serif;
+
+                @include max-tablet-t {
+                    font-size: 8.3819031715rem;
+                }
+            }
+
+            h1 {
+                font-weight: 900;
+                text-transform: uppercase;
+                color: hsla(0, 0%, 100%, .9);
+                // font-size: 13.0967237055rem;
+                font-size: 16.3709rem;
+                text-align: center;
+                line-height: .8;
+                font-family: 'Intro', Arial, Helvetica, sans-serif;
+
+                @include max-tablet-t {
+                    font-size: 10.4773789644rem;
+                }
+            }
+
+            h3 {
+                font-size: 1.40625rem;
+                line-height: 2.25;
+                text-align: center;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: .15em;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-top: 43px;
+
+                @include max-tablet-t {
+                    font-size: 1.125rem;
+                }
+
+                @include max-tablet-only-t {
+                    display: none;
+                }
+            }
+
+            .spans {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 43px;
+                
+                @include min-tablet-only-t {
+                    display: none;
+                }
+
+                span {
+                    font-size: 1.125rem;
+                    line-height: 2.25;
+                    text-align: center;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: .15em;
+                    color: #fff;
+                    font-family: Arial, Helvetica, sans-serif;
+
+                }
+            }
+
+            .scrool-span {
+                width: 30px;
+                height: 44px;
+                border: 2px solid #fff;
+                border-radius: 20px;
+                margin-top: 24px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 4px;
+                    height: 20%;
+                    top: 20%;
+                    left: 50%;
+                    margin-left: -2px;
+                    border-radius: 2px;
+                    background-color: #fff;
+                    animation: scroll 2s ease-in-out infinite;
+
+                    @keyframes scroll {
+                        from {
+                            top: 8px;
+                            opacity: 1;
+                        }
+
+                        to {
+                            top: 25px;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .overlay-wallpaper-section-h-p {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.589);
+            z-index: -1;
+        }
+    }
+
+}
